@@ -12,7 +12,7 @@ Jails are the basis of plugins. Jails are FreeBSD’s container technology and a
 `iocage` is the FreeBSD Jail container management framework in TrueNAS.
 
 This tutorial will walk through the creation of a [SABnzbd](https://sabnzbd.org/) newsreader plugin using iocage.
-Each of the most popular TrueNAS plugins such as Plex Media Server, NextCloud, and SyncThing begin as FreeBSD ports: [multimedia/plexmediaserver/](https://www.freshports.org/multimedia/plexmediaserver/), [deskutils/nextcloudclient/](https://www.freshports.org/deskutils/nextcloudclient/), and [net/syncthing/](https://www.freshports.org/net/syncthing/) respectively.
+<!-- markdown-link-check-disable-line -->Each of the most popular TrueNAS plugins such as Plex Media Server, NextCloud, and SyncThing begin as FreeBSD ports: [multimedia/plexmediaserver/](https://www.freshports.org/multimedia/plexmediaserver/), [deskutils/nextcloudclient/](https://www.freshports.org/deskutils/nextcloudclient/), and [net/syncthing/](https://www.freshports.org/net/syncthing/) respectively.
 These can each be installed on a FreeBSD system with the `pkg` package manager.
 For example, `pkg install plexmediaserver` and configure the application manually.
 

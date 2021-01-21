@@ -214,7 +214,7 @@ tags: ["reference", "NTP", "certificates", "email", "dataset", "ssh", "2FA"]
 | | |
 |-|-|
 | API Key | Enter or paste the [API key](https://docs.opsgenie.com/v1.0/docs/api-integration). Find the API key by signing into the OpsGenie web interface and going to Integrations/Configured Integrations. Click the desired integration, Settings, and read the API Key field. |
-| API URL | Leave empty for default ([OpsGenie API](https://api.opsgenie.com/) |
+<!-- markdown-link-check-disable-line -->| API URL | Leave empty for default ([OpsGenie API](https://api.opsgenie.com/) |
 
 **Pager Duty**
 
@@ -429,7 +429,7 @@ Authentication options change according to the chosen **Provider**.
 
 | | |
 |-|-|
-| TrueNAS URL | Hostname or IP address of the remote system. A valid URL scheme is required. Example: https://10.231.3.76 |
+<!-- markdown-link-check-disable-line -->| TrueNAS URL | Hostname or IP address of the remote system. A valid URL scheme is required. Example: https://10.231.3.76 |
 | Username | Username for logging in to the remote system. |
 | Password | User account password for logging into the remote system. |
 | Private Key | Choose a saved SSH Keypair or select Generate New to create a new keypair and use it for this connection. |

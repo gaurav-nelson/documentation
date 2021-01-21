@@ -20,7 +20,7 @@ Set up the configuration inside this window.
 
 <img src="/images/edits3config.png"><br><br>
 
-Select IP address 0.0.0.0 to allow the service to listen on any IP address. Select the TrueNAS IP address to constrain it to a specific network.
+<!-- markdown-link-check-disable-line -->Select IP address 0.0.0.0 to allow the service to listen on any IP address. Select the TrueNAS IP address to constrain it to a specific network.
 The default port is 9000, but it can be changed as needed.
 
 Set an access key and secret key.
@@ -37,7 +37,7 @@ Start the service and select whether to start automatically (on system boot).
 
 <img src="/images/enables3service.png"><br><br>
 
-Test access to the Minio Browser by opening a web browser and typing the TrueNAS IP address with the TCP port. For example: http://192.168.0.3:9000
+<!-- markdown-link-check-disable-line -->Test access to the Minio Browser by opening a web browser and typing the TrueNAS IP address with the TCP port. For example: http://192.168.0.3:9000
 
 Buckets can be created and files uploaded using the Minio Browser.
 
@@ -60,12 +60,12 @@ If the connection has any issues, open the config file again to clean it up. In 
 Scroll down to the host_bucket area and make sure the %(bucket)s. portion is removed and the address points to the IP_address:TCP_port for the system.
 
 **Right:**
-host_base = 192.168.123.207:9000
-host_bucket = 192.168.123.207:9000
+<!-- markdown-link-check-disable-line -->host_base = 192.168.123.207:9000
+<!-- markdown-link-check-disable-line -->host_bucket = 192.168.123.207:9000
 
 **Wrong:**
-host_base = 192.168.123.207
-host_bucket = %(bucket)s.192.168.123.207
+<!-- markdown-link-check-disable-line -->host_base = 192.168.123.207
+<!-- markdown-link-check-disable-line -->host_bucket = %(bucket)s.192.168.123.207
 
 Poll the buckets using `s3cmd ls`. The buckets created with the Minio Browser should be visible.
 
