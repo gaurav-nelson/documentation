@@ -25,12 +25,14 @@ tags: ["reference", "networking", "IPMI"]
 | NameServer 3 | Third DNS server. |
 
 **Other Settings**
-
+<!-- markdown-link-check-disable -->
 | | |
 |-|-|
-<!-- markdown-link-check-disable-line -->| HTTP Proxy | When using a proxy, enter the proxy information for the network in the format http://my.proxy.server:3128 or http://user:password@my.proxy.server:3128 |
+| HTTP Proxy | When using a proxy, enter the proxy information for the network in the format http://my.proxy.server:3128 or http://user:password@my.proxy.server:3128 |
 | Enabled Netwait Features | Delays the start of network services until pings are returned from the IP addresses added to the Netwait IP List. |
 | Host Name Database | Additional hosts to be appended to /etc/hosts. Separate entries by pressing Enter. Hosts defined here are still accessible by name even when DNS is not available. See hosts(5) for additional information. |
+<!-- markdown-link-check-enable -->
+
 **Service Announcement**
 
 | | |

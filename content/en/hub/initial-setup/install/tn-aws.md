@@ -35,12 +35,12 @@ weight: 3
 
 ## Using Virtualized TrueNAS with Amazon Web Services (AWS)
 
+<!-- markdown-link-check-disable -->
 These instructions demonstrate how to create a virtualized TrueNAS image on FreeBSD, configure it with Amazon Elastic Compute Cloud (EC2), and access the TrueNAS web interface.
 There are a few things that must be prepared before building the image.
 The FreeBSD system needs two applications to create, configure, and upload the virtual machine image:
-[bhyve](https://bhyve.org/)
-<!-- markdown-link-check-disable-line -->and [bsdec2-image-upload](https://www.freshports.org/net/bsdec2-image-upload/). The most recent version (>=1.3.1) of bsdec2-image-upload is required, otherwise an SSL error will occur when attempting to upload the image. If not available on the ports tree, the utility will need to be downloaded from the [GitHub](https://github.com/cperciva/bsdec2-image-upload).
-
+[bhyve](https://bhyve.org/) and [bsdec2-image-upload](https://www.freshports.org/net/bsdec2-image-upload/). The most recent version (>=1.3.1) of bsdec2-image-upload is required, otherwise an SSL error will occur when attempting to upload the image. If not available on the ports tree, the utility will need to be downloaded from the [GitHub](https://github.com/cperciva/bsdec2-image-upload).
+<!-- markdown-link-check-enable -->
 **NOTE**: Currently bsdec2-image-upload will fail on images whose file size is not 10GB. An issue has been created, but in the meantime a patch may be needed to correct this error, which involves editing main.c, replacing:
 
 ```
@@ -55,9 +55,12 @@ with
 
 Following the size required for TrueNAS. To build, ensure either libressl-devel or openssl-devel, as well as ca_root_nss, are installed and run "make install". Additionally the utility only builds on FreeBSD, but another patch is underway to build on Linux.
 
+<!-- markdown-link-check-disable -->
 Create an [AWS account](https://portal.aws.amazon.com/billing/signup?nc2=h_ct&src=default&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start) with an
-<!-- markdown-link-check-disable-line -->[S3 bucket](https://docs.aws.amazon.com/quickstarts/latest/s3backup/step-1-create-bucket.html). Record the region associated with the S3 bucket. It is also recommened the bucket have a lifetime policy which deletes data after 1 day, as bsdec2-image-upload will not delete files from S3 and the files are no longer needed after the AMI is registered.
+[S3 bucket](https://docs.aws.amazon.com/quickstarts/latest/s3backup/step-1-create-bucket.html). Record the region associated with the S3 bucket. It is also recommened the bucket have a lifetime policy which deletes data after 1 day, as bsdec2-image-upload will not delete files from S3 and the files are no longer needed after the AMI is registered.
 A [user with permissions to EC2 and S3](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) will also be required with the following permissions:
+<!-- markdown-link-check-enable -->
+
 
 ```
 s3:PutObject

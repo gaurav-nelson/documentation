@@ -74,6 +74,7 @@ By default, **Disable Password** is set to *No*.
 
 A specific [shell](/hub/tasks/administrative/gui-shell/) can be set for the user from the **Shell** drop-down:
 
+<!-- markdown-link-check-disable -->
 | Shell | Description |
 |-------|-------------|
 | csh	| [C shell](https://docs.freebsd.org/44doc/usd/04.csh/paper.html) for UNIX system interactions. |
@@ -81,13 +82,14 @@ A specific [shell](/hub/tasks/administrative/gui-shell/) can be set for the user
 | tcsh	| [Enhanced C shell](https://www.tcsh.org) that includes editing and name completion. |
 | bash	| [Bourne Again shell](https://www.gnu.org/software/bash/manual/bash.html) for the GNU operating system. |
 | ksh93	| [Korn shell](http://www.kornshell.com) that incorporates features from both *csh* and *sh*. |
-<!-- markdown-link-check-disable-line -->| mksh	| [MirBSD Korn Shell](https://www.mirbsd.org/mksh.htm) |
+| mksh	| [MirBSD Korn Shell](https://www.mirbsd.org/mksh.htm) |
 | rbash	| [Restricted bash](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html) |
 | rzsh	| [Restricted zsh](https://www.csse.uwa.edu.au/programming/linux/zsh-doc/zsh_14.html) |
 | scponly | [scponly](https://github.com/scponly/scponly/wiki) restricts the user's SSH usage to only the `scp` and `sftp` commands. |
 | zsh	| [Z shell](https://www.zsh.org) |
 | git-shell | [restricted git shell](https://git-scm.com/docs/git-shell) |
 | nologin | Use when creating a system account or to create a user account that can authenticate with shares but which cannot log in to the TrueNAS system using `ssh`.
+<!-- markdown-link-check-enable -->
 
 Setting **Lock User** disables all password-based functionality for this account until the option is unset.
 
