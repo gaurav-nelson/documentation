@@ -1,9 +1,16 @@
 {
-  "projectBaseUrl": "https://www.truenas.com/docs",
   "replacementPatterns": [
     {
-      "pattern": "\/$",
+      "pattern": "(?<=^\/(hub|hardware|truecommand)\/.+)\/$",
       "replacement": ".md"
+    },
+    {
+      "pattern": "(?<=^\/(hub|hardware|truecommand)\/.+)\/#(?=.+)",
+      "replacement": ".md#"
+    },
+    {
+      "pattern": "^\/",
+      "replacement": "{{BASEURL}}/content/en/"
     }
-  ],
+  ]
 }
